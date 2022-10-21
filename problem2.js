@@ -1,11 +1,18 @@
 Problem 2 : Check whether a string is palindrome or not.
 
 var str = "racecar";
+
+let rev="";
  
-for ( var i = 0; i < mid; i++ ) {
-    if (str[i] !== str[len - 1 - i]) {
-        console.log(str + " is not a palindrome.");
-        return;
-    }
+for ( var i =str.length-1 ; i>=0 ; i-- ) {
+    
+        rev = rev + str[i];
 }
-console.log(str + " is a palindrome.");
+
+if(rev==str){
+
+      console.log(str," is a palindrome.");
+    
+}else {
+
+      console.log(str," is not a palindrome.");
